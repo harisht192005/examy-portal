@@ -1,0 +1,65 @@
+[
+  {
+    "id": 7,
+    "title": "akajk",
+    "duration": 20,
+    "total_marks": 20,
+    "created_by": 13,
+    "is_active": 1,
+    "created_at": "2026-03-03T04:25:17.000Z"
+  },
+  {
+    "id": 6,
+    "title": "ml,l",
+    "duration": 20,
+    "total_marks": 20,
+    "created_by": 5,
+    "is_active": 1,
+    "created_at": "2026-03-02T09:13:47.000Z"
+  },
+  {
+    "id": 5,
+    "title": "ddf",
+    "duration": 20,
+    "total_marks": 20,
+    "created_by": 5,
+    "is_active": 1,
+    "created_at": "2026-03-02T09:12:48.000Z"
+  },
+  {
+    "id": 4,
+    "title": "sdvfb",
+    "duration": 20,
+    "total_marks": 20,
+    "created_by": 5,
+    "is_active": 1,
+    "created_at": "2026-03-02T08:59:17.000Z"
+  },
+  {
+    "id": 3,
+    "title": "scdfghjk",
+    "duration": 20,
+    "total_marks": 1234567890,
+    "created_by": 12,
+    "is_active": 1,
+    "created_at": "2026-03-02T07:48:35.000Z"
+  },
+  {
+    "id": 2,
+    "title": "dd",
+    "duration": 20,
+    "total_marks": 100,
+    "created_by": 12,
+    "is_active": 1,
+    "created_at": "2026-03-02T07:21:18.000Z"
+  },
+  {
+    "id": 1,
+    "title": "Science Test 2",
+    "duration": 10,
+    "total_marks": 20,
+    "created_by": 10,
+    "is_active": 1,
+    "created_at": "2026-03-02T06:35:56.000Z"
+  }
+]
