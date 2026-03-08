@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Examy Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand"><a href="/">Examy Portal</a></div>
+        <div class="nav-links">
+            <a href="/login.html" class="btn btn-secondary">Login</a>
+        </div>
+    </nav>
+
+    <div class="auth-container glass-panel">
+        <h2 style="text-align: center; color: var(--teal-text);">Create an Account</h2>
+        <p style="text-align: center; color: var(--ink-muted); margin-bottom: 2rem;">Join Examy Portal today</p>
+
+        <form id="registerForm">
+            <div class="form-group">
+                <label class="form-label" for="name">Full Name</label>
+                <input type="text" id="name" class="form-input" required placeholder="Enter your full name">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" id="email" class="form-input" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="password">Password</label>
+                <div style="position: relative; display: flex; align-items: center;">
+                    <input type="password" id="password" class="form-input" required
+                        placeholder="Create a strong password" style="padding-right: 3rem;">
+                    <button type="button" tabindex="-1"
+                        onclick="togglePasswordVisibility('password', 'eyeIconRegister')"
+                        style="position: absolute; right: 0.75rem; background: transparent; border: none; cursor: pointer; color: var(--ink-muted); display: flex; align-items: center; justify-content: center; padding: 0.25rem;">
+                        <svg id="eyeIconRegister" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                            <circle cx="12" cy="12" r="3"></circle>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="role">Register As</label>
+                <select id="role" class="form-select" required>
+                    <option value="student">Student</option>
+                    <option value="admin">Administrator</option>
+                </select>
+            </div>
+
+            <div id="errorMsg" class="error-msg"></div>
+            <div id="successMsg" class="success-msg"></div>
+
+            <button type="submit" class="btn btn-primary btn-block" style="margin-top: 1rem;">Register</button>
+        </form>
+
+        <p style="text-align: center; margin-top: 1.5rem; font-size: 0.875rem;">
+            Already have an account? <a href="/login.html">Login here</a>
+        </p>
+    </div>
+
+    <script src="/js/auth.js"></script>
+</body>
+
+</html>
