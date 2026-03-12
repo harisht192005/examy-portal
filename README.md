@@ -75,6 +75,7 @@ A highly secure, scalable, and fast online examination platform built with Node.
    ```
    Or, if you have `nodemon` installed globally:
    ```bash
+   npm install -g nodemon
    nodemon server.js
    ```
 
@@ -85,7 +86,7 @@ A highly secure, scalable, and fast online examination platform built with Node.
 
 ## Folder Structure
 
-```
+```text
 examy-portal/
 │
 ├── config/
@@ -94,7 +95,8 @@ examy-portal/
 ├── controllers/
 │   ├── adminController.js    # Exam/Question/Result management logic
 │   ├── authController.js     # Registration/Login/JWT Logic
-│   └── examController.js     # taking exams, auto-submitting logic
+│   ├── examController.js     # taking exams, auto-submitting logic
+│   └── studentController.js  # Student dashboard metrics logic
 │
 ├── middleware/
 │   └── authMiddleware.js     # verifying JWT tokens and roles (Admin/Student)
@@ -115,7 +117,8 @@ examy-portal/
 ├── routes/
 │   ├── admin.js              # Admin endpoints
 │   ├── auth.js               # Auth endpoints
-│   └── exam.js               # Exam environment endpoints
+│   ├── exam.js               # Exam environment endpoints
+│   └── student.js            # Student profile endpoints
 │
 ├── views/                    # HTML Interfaces
 │   ├── index.html            # Landing page
@@ -143,4 +146,6 @@ examy-portal/
 1. Ensure `NODE_ENV` is set to `production`.
 2. Change `JWT_SECRET` and `SESSION_SECRET` to strong, random key strings.
 3. Update database credentials.
-4. Host backend on a VPS (AWS, DigitalOcean) and use PM2 (`pm2 start server.js`) for keeping the app alive. Set up Nginx as a reverse proxy targeting port `3000`.
+4. Host backend on a VPS (AWS, DigitalOcean) and use PM2 (`pm2 start server.js`) for keeping the app alive.
+5. Set up Nginx as a reverse proxy targeting port `3000`.
+
